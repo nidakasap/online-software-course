@@ -1,0 +1,181 @@
+:root{
+ --red:#E10032;
+ --grey:rgba(103, 99, 99, 0.292);
+ --body-fonts: 'Lato', sans-serif;;
+ 
+}
+* {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 85px;
+}
+body{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div[class^="col-"] {
+    transition: width 0.1s, height 0.1s;}
+
+/* NAVBAR */
+.navbar {
+  width: 78%;
+  opacity: 2rem;
+  margin: auto;
+  position: fixed;
+  z-index: 4;
+  margin-top: 1rem;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px var(--grey);
+}
+
+.navbar .nav-link:hover{
+   color:var(--red);
+}
+
+.navbar-nav{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* CAROUSEL */
+.carousel-item{
+    max-height: calc(100vh - 87px) !important;
+}
+
+.carousel-caption{
+    bottom: 5rem;
+    background-color: #8d908e93 !important;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 3rem;
+  
+}
+
+.carousel-caption .btn{
+    border: none;
+    width: 10rem;
+    font-weight: 600;
+    color: white;
+}
+
+#register-button{ 
+    background-color:var(--red);
+   
+}
+#learn-button{ 
+    background-color:#FFF6F6;
+    color:var(--red);
+}
+
+.carousel-caption h5{
+    color: var(--red);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px rgb(110, 101, 101);
+
+}
+.carousel-caption p{
+    font-weight: 600;
+}
+
+.carousel-indicators button{
+    background-color: var(--red);
+    padding: 0.1rem !important;
+    width: 3rem !important;
+}
+
+section#about .bi{
+    font-size: 3rem;
+}
+/* TEACHER */
+.card .bi{
+    color: #dc3545;
+    font-size: 1.1rem;
+}
+
+.card .bi:hover{
+    opacity: .5;
+}
+
+section#instructor{
+    background-color:var(--grey);
+ 
+}
+
+section#instructor .card{
+     transition: all .5s; 
+}
+
+section#instructor img{
+    height: 200px;
+    object-fit: cover; 
+ 
+
+}
+section#instructor .card:hover{
+    transform: scale(1.03);
+}
+
+section#student #student-img{
+   height: 300px;
+    object-fit: cover; 
+}
+
+section#student #trustpilot-img {
+  height: 50px;
+  object-fit: cover;
+}
+
+section#courses {
+  background-color: var(--grey);
+
+}
+
+section#courses .nav-link.active {
+  background-color: var(--red);
+}
+
+section#courses .nav-link {
+  color: white;
+}
+
+section#courses .nav-pills {
+  font-size: 1.2rem;
+}
+
+section#courses .nav-item{
+  border-radius: 10px;
+  margin-right: 1rem;
+background-color: #8d908e29 !important;
+}
+
+section#contact i {
+  color: var(--red) !important;
+  font-size: 2rem;
+}
+
+section#contact a {
+  color: var(--red) !important;
+  text-decoration: none;
+}
+
+
+footer i {
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  transition: color .6s;
+}
+
+footer i:hover {
+  color: var(--red);
+}
+
+.text-danger{
+  color: var(--red) !important;
+}
